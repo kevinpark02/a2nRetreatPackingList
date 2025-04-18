@@ -1,0 +1,10 @@
+{
+    "name": "A2N Packing List",
+    "version": "1.0",
+    "description": "Generate a packing list",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": []
+}
