@@ -1,10 +1,19 @@
 html, body {
     margin: 0; 
     padding: 0;
-    width: 300px;
-    height: 500px;
-    font-family: "Anton";
+    padding-top: 20px;
+    width: 400px;
+    height: 600px;
     background-color: #5E7569;
     box-sizing: border-box;
     color:white;
+}
+#title {
+    font-family: "Anton";
+    font-size: 50px;
+    text-align: center;
+}
+.orange-btn{
+    color:white;
+    background-color: rgb(239, 123, 45);
 }
