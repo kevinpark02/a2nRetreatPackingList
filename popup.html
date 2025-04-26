@@ -15,28 +15,29 @@
         <div id="options">
             <div id="numDays">
                 <label for="numDays">Number of days</label>
-                    <input type="text" id="numDays">
+                    <input type="text" id="numOfDays">
             </div>
-            <div id="hotel-homestay">
-                <label for="hotel-homestay">Hotel/Homestay</label>
-                    <select id="hotel-homestay">
+            <div id="lodgingOption">
+                <label for="lodging">Lodging</label>
+                    <select id="lodging">
                         <option value="" disabled selected>Select an item</option>
-                        <option value="hotel">Hotel</option>
-                        <option value="homestay">Homestay</option>
+                        <option value="hotel/homestay">Hotel/Homestay</option>
+                        <option value="retreatSiteOther">Retreat Site/Other</option>
                     </select>
             </div>
-            <div id="sports">
+            <div id="sports?">
                 <label for="sports">Sports</label>
                     <select id="sports">
                         <option value="" disabled selected>Select an item</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
+                        <option value="yesSports">Yes</option>
+                        <option value="noSports">No</option>
                     </select>
             </div>
         </div>
         <div id="button">
-            <button class="orange-btn">generate my list</button>
+            <button id="orange-btn" class="orange-btn">generate my list</button>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
