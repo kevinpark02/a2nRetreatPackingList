@@ -14,11 +14,11 @@
         </div>
         <div id="options">
             <div id="numDays">
-                <label for="numDays">Number of days</label>
+                <optionsLabel for="numDays">Number of days</optionsLabel>
                     <input type="text" id="numOfDays">
             </div>
             <div id="lodgingOption">
-                <label for="lodging">Lodging</label>
+                <optionsLabel for="lodging">Lodging</optionsLabel>
                     <select id="lodging">
                         <option value="" disabled selected>Select an item</option>
                         <option value="hotel/homestay">Hotel/Homestay</option>
@@ -26,12 +26,17 @@
                     </select>
             </div>
             <div id="sports?">
-                <label for="sports">Sports</label>
+                <optionsLabel for="sports">Sports</optionsLabel>
                     <select id="sports">
                         <option value="" disabled selected>Select an item</option>
                         <option value="yesSports">Yes</option>
                         <option value="noSports">No</option>
                     </select>
+            </div>
+        </div>
+        <div id="output" style="display: none;" >
+            <div id="checklistContainer">
+
             </div>
         </div>
         <div id="button">

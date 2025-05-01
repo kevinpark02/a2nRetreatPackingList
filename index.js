@@ -7,7 +7,7 @@ const packingListTemplate = {
             'pair of socks'
         ],
         nonMultiplier: [
-            'tooth brush',
+            'toothbrush',
             'toothpaste',
             'floss',
             'raincoat (optional)',
@@ -57,5 +57,38 @@ orangeBtn.onclick = function() {
         packingList = [...packingList, ...packingListTemplate.retreatSiteOther]
     }
 
+    const checklist = document.getElementById('checklistContainer')
+        checklist.style.textAlign = 'left';  // Align checklist container to the left
+        checklist.style.display = 'flex';          // Arrange labels in a row
+        checklist.style.flexWrap = 'nowrap'; 
+        checklist.style.overflowX = 'auto';          // Enable horizontal scrolling
+        checklist.style.whiteSpace = 'nowrap';       // Prevent text from wrapping
+        checklist.style.justifyContent = 'flex-start';
+
+    packingList.forEach(item => {
+        const label = document.createElement('label');
+        // Make text black and align to the left
+        label.style.color = 'black';     // Set text color to black
+        label.style.textAlign = 'left';  // Align label text to the left
+        label.style.display = 'inline-flex'; // keeps label and checkbox in same line
+        label.style.alignItems = 'flex-start';
+    
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.value = item;
+        // checkbox.style.marginRight = '2px'; // Optional: Adds space between checkbox and text
+
+    
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(item));
+
+        checklist.appendChild(label);
+    });
+    
+
     console.log(packingList)
+
+    document.getElementById("options").style.display = "none";
+    document.getElementById("output").style.display = "block";
+
 }
