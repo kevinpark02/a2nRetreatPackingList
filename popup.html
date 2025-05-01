@@ -14,29 +14,35 @@
         </div>
         <div id="options">
             <div id="numDays">
-                <label for="numDays">Number of days</label>
-                    <input type="text" id="numDays">
+                <optionsLabel for="numDays">Number of days</optionsLabel>
+                    <input type="text" id="numOfDays">
             </div>
-            <div id="hotel-homestay">
-                <label for="hotel-homestay">Hotel/Homestay</label>
-                    <select id="hotel-homestay">
+            <div id="lodgingOption">
+                <optionsLabel for="lodging">Lodging</optionsLabel>
+                    <select id="lodging">
                         <option value="" disabled selected>Select an item</option>
-                        <option value="hotel">Hotel</option>
-                        <option value="homestay">Homestay</option>
+                        <option value="hotel/homestay">Hotel/Homestay</option>
+                        <option value="retreatSiteOther">Retreat Site/Other</option>
                     </select>
             </div>
-            <div id="sports">
-                <label for="sports">Sports</label>
+            <div id="sports?">
+                <optionsLabel for="sports">Sports</optionsLabel>
                     <select id="sports">
                         <option value="" disabled selected>Select an item</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
+                        <option value="yesSports">Yes</option>
+                        <option value="noSports">No</option>
                     </select>
+            </div>
+        </div>
+        <div id="output" style="display: none;" >
+            <div id="checklistContainer">
+
             </div>
         </div>
         <div id="button">
-            <button class="orange-btn">generate my list</button>
+            <button id="orange-btn" class="orange-btn">generate my list</button>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

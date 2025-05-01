@@ -37,7 +37,35 @@ html, body {
     box-sizing: border-box;
 }
 
-label {
+#output {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 75%;
+    font-size: 20px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10%;
+    background-color: white;
+    justify-content: space-evenly;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+#checklistContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+optionsLabel {
     display: inline-block;
     width: 150px;
     text-align: right;
